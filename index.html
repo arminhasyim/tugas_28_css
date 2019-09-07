@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style media="screen">
+    body {
+      padding-top: 2em;
+      background: #333333;
+    }
+    .register-form{
+        font-size: 16px;
+        width:500px;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    .regbutton{
+        height: 50px;
+        width: 100%;
+        background-color:#16A2B8;
+        border-radius: 5px;
+        font-size: 18px;
+        color:white;
+        border: none !important;
+        margin-bottom: 5px;
+    }
+    .regbutton:hover{
+        color: white;
+        background-color:#aa422f;
+    }
+    .regbutton:active{
+        color: white;
+        background-color:#aa422f;
+    }
+    .logbutton{
+        height: 50px;
+        width: 200px;
+        background-color:yellowgreen;
+        border-radius: 0px;
+        font-size: 18px;
+        color:white;
+        border: none !important;
+        margin-bottom: 5px;
+    }
+    .logbutton:hover{
+        color: white;
+        background-color:darkolivegreen;
+    }
+    .logbutton:active{
+        color: white;
+        background-color:darkolivegreen;
+    }
+
+
+
+    .register-form label{
+        color: aliceblue;
+
+    }
+    .register-form input{
+        margin-bottom: 5px;
+        width: 500px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .register-form textarea{
+        margin-bottom: 5px;
+        width: 500px;
+        border-radius: 5px;
+    }
+    .register-form img{
+      left:50%;
+    }
+    .white{
+      color: #ffffff;
+    }
+    .checkboxtext{
+      font-size: 12px;
+      top: -38px;
+      position: relative;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+  	 <form action="" method="" class="register-form">
+        <div class="text-center">
+          <img src="lampung.jpg" class="rounded-circle center" width="200px" alt="">
+        </div>
+        <div class="row">
+             <div class="col-md-4 col-sm-4 col-lg-4">
+                <label for="Nama">Nama Lengkap</label>
+                 <input name="Nama" class="form-control" type="text" placeholder="Nama Lengkap">
+             </div>
+        </div>
+        <div class="row">
+             <div class="col-md-4 col-sm-4 col-lg-4">
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" rows="3" cols="50"></textarea>
+             </div>
+        </div>
+        <div class="row">
+             <div class="col-md-4 col-sm-4 col-lg-4">
+                <label for="email">Alamat Email</label>
+                 <input name="email" class="form-control" type="email" placeholder="Alamat Email Disabled" disabled>
+             </div>
+        </div>
+        <div class="row">
+             <div class="col-md-4 col-sm-4 col-lg-4">
+                <label for="password">Password</label>
+                 <input name="password" class="form-control" type="password" placeholder="Password">
+             </div>
+        </div>
+        <div class="row">
+             <div class="col-md-4 col-sm-4 col-lg-4">
+                <label for="ktp">Scan KTP</label>
+                 <input name="ktp" type="file" class="white">
+             </div>
+        </div>
+        <div class="checkbox">
+                 <input name="agree" type="checkbox"><label for="agree" class="checkboxtext">saya setuju dan telah membaca aturan serta ketentuan yang berlaku.</label>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+              <button class="btn btn-default regbutton">Submit</button>
+            </div>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
